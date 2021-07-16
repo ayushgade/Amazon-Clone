@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import reducer, {initialState} from './components/Reducer';
+import { StateProvider } from './components/StateProvider';
 
 ReactDOM.render(
   <React.StrictMode>
+  <StateProvider initialState={initialState} reducer={reducer}>
     <App />
+    </StateProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//By above code we giving access of Data Layer to every single components
+//By use of Datalayer if we push information we can also pull that info.....

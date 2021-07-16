@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: rgb(235, 237, 237);
+}
+
+/* -------------------------------Header -----------------------------*/
+
+.header {
+  height: 60px;
+  background-color: #131921;
+  display: flex;
+  position: sticky;
+  align-items: center;
+  top: 0;
+  z-index: 100;
+}
+.header_logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 16px 20px 0 20px;
+}
+.header_search {
+  display: flex;
+  /* it says strech as much as u cans */
+  flex: 1;
+  align-items: center;
+}
+.header_searchInput {
+  height: 12px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.header_searchIcon {
+  background-color: #cd9042;
+  height: 22px !important ;
+  padding: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.header_optionLineOne {
+  font-size: 10px;
+}
+.header_optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+.header_nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header_option {
+  color: #fff;
+  display: flex;
+  margin: 0 10px;
+  flex-direction: column;
+}
+.header_optionBasket {
+  color: #fff;
+  align-items: center;
+  display: flex;
+}
+.header_optionBasketCount {
+  margin: 0 10px;
+}
+/* -------------------------------Header End -----------------------------*/
+
+/* -------------------------------Home -----------------------------*/
+.home {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.home_row {
+  display: flex;
+  flex: 1;
+  z-index: 1;
+  margin: 0 5px;
+}
+
+.home_image {
+  width: 100%;
+  margin-bottom: -150px;
+  z-index: -1;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0), transparent);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+/* -------------------------------Home -----------------------------*/
+
+/* -------------------------------Product -----------------------------*/
+
+.product {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  align-items: center;
+  background-color: #fff;
+  justify-content: flex-end;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  max-height: 400px;
+  min-width: 100px;
+}
+.product:hover{
+  box-shadow: 10px 11px 30px -3px rgba(0,0,0,0.67);
+-webkit-box-shadow: 10px 11px 30px -3px rgba(0,0,0,0.67);
+-moz-box-shadow: 10px 11px 30px -3px rgba(0,0,0,0.67);
+}
+.product > img {
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+  z-index: -1;
+}
+.product > button {
+  background: #f0c14b;
+  border: 1px solid;
+  margin-top: 10px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+}
+.product_rating {
+  display: flex;
+  /* z-index: 1; */
+}
+.product_info {
+  height: 100px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  z-index: 1;
+}
+.product_price {
+  margin-top: 5px;
+}
+
+/* -------------------------------Product -----------------------------*/
+
+/* -------------------------------Checkout -----------------------------*/
+
+.checkout {
+  background-color: #fff;
+  display: flex;
+  padding: 20px;
+  height: max-content;
+}
+.checkout_ad {
+  width: 100%;
+  max-height: 150px;
+  margin-bottom: 10px;
+}
+.checkout_title {
+  margin-right: 10px;
+  padding: 10px;
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+/* -------------------------------Checkout -----------------------------*/
+
+/* -------------------------------SubTotal -----------------------------*/
+
+.subtotal {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  border: 1px solid #dddddd;
+}
+
+.subtotal_gift {
+  display: flex;
+  align-items: center;
+}
+.subtotal_gift > input {
+  margin-right: 5px;
+}
+.subtotal > button {
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  background: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  margin-top: 10px;
+}
+
+/* -------------------------------SubTotal -----------------------------*/
+
+/* -------------------------------BasketItem -----------------------------*/
+
+.basketitem {
+  display: flex;
+  margin: 0 20px;
+}
+.basketitem_info {
+  padding: 20px;
+}
+.basketitem_info > button {
+  background: #f0c14b;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 5px 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  margin-top: 10px;
+}
+.basketitem_title {
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 5px;
+  max-width: 500px;
+}
+.basketitem_image {
+  height: 180px;
+  width: 180px;
+  margin-top: 10px;
+  object-fit: contain;
+}
+.basketitem_rating {
+  display: flex;
+  margin-top: 5px;
+}
+
+/* -------------------------------BasketItem -----------------------------*/
+
+/* -------------------------------Login Page -----------------------------*/
+
+.login {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.login__logo {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  object-fit: contain;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.login__container {
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 20px;
+}
+
+.login__container > h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.login__container > form > h5 {
+  margin-bottom: 5px;
+}
+
+.login__container > form > input {
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 98%;
+}
+
+.login__container > p {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.login__signInButton {
+  background: #f0c14b;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+}
+
+.login__registerButton {
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: darkgray;
+}
+
+/* -------------------------------Login Page -----------------------------*/
+
+/* -------------------------------Payment -----------------------------*/
+
+.payment{
+  background-color: #fff;
+}
+
+.payment_container > h1{
+  text-align: center;
+  padding: 10px;
+  font-weight: 400;
+  background-color: rgb(235, 237, 237);
+  border-bottom: 1px solid lightgray;
+}
+
+.payment_container >h1 a {
+  text-decoration: none;
+}
+
+.payment_section {
+  display: flex;
+  padding: 20px;
+  margin: 0 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.payment_title{
+  flex: 0.2;
+}
+
+.payment_button {
+  background: #f0c14b;
+  border-radius: 2px;
+  padding: 5px 10px;
+  height: 30px;
+  border: 1px solid;
+  font-weight: bolder;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}
+
+.payment_address, .payment_items, .payment_details {
+  flex: 0.8;
+}
+/* -------------------------------Payment -----------------------------*/
+
+/* -------------------------------Order -----------------------------*/
+
+.order {
+  padding: 40px;
+  margin: 20px 0;
+  border: 1px solid lightgray;
+  background-color: white;
+  position: relative;
+}
+
+.order__id {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+.order__total {
+  font-weight: 500;
+  text-align: right;
+}
+/* -------------------------------Order -----------------------------*/
+
+/* -------------------------------Orders-----------------------------*/
+
+.orders {
+  padding: 20px 80px;
+}
+
+.orders > h1 {
+  margin: 30px 0;
+}
